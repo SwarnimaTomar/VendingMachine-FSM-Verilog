@@ -26,14 +26,77 @@ A Vending Machine Controller in Verilog HDL using FSM architecture. Handles coin
 
 ## Synthesis Results — Xilinx Artix-7 (xc7a50tcsg325-1)
 
-| Resource | Used | Available | Utilization |
+|
+ Resource
+|
+ Used
+|
+ Available
+| 
+ Utilization
+|
+|
+|----------
+|------
+|-----------
+|-------------
+|
+|
 
-| Slice LUTs | 45 | 32,600 | 0.14% |
-| Flip-Flops | 16 | 65,200 | 0.02% |
-| I/O Ports | 34 | 150 | 22.67% |
-| BUFGCTRL | 1 | 32 | 3.13% |
-| Block RAM | 0 | 75 | 0.00% |
-| DSPs | 0 | 120 | 0.00% |
+| 
+ Slice LUTs
+|
+ 45
+|
+ 32,600 
+|
+ 0.14%
+|
+| 
+ Flip-Flops 
+|
+ 16 
+|
+ 65,200
+| 
+ 0.02% 
+|
+|
+ I/O Ports 
+|
+ 34
+|
+ 150
+|
+ 22.67% 
+|
+|
+ BUFGCTRL
+|
+ 1 
+|
+ 32 
+| 
+ 3.13%
+|
+|
+ Block RAM
+|
+ 0
+|
+ 75
+|
+ 0.00%
+|
+|
+ DSPs
+|
+ 0
+|
+ 120
+|
+ 0.00% 
+|
 
 ### RTL Schematic
 ![Schematic 1](synth/schematic_1.png)
