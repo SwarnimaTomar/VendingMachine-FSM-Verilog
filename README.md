@@ -14,9 +14,9 @@ A Vending Machine Controller in Verilog HDL using FSM architecture. Handles coin
 ## Simulation Results
 
 ### Online Payment Flow
-![Online Payment](sim/waveform_online_payment.png)
+![Online Payment](simulation/waveform_online_payment.png)
 - START + ONLINE_PAYMENT=1 → skips coin collection → direct dispense
-- PRODUCT_PRICE=50, COINS=60 → DISPENSE_PRODUCT HIGH, RETURN_CHANGE=10 ✅
+- PRODUCT_PRICE=10, ONLINE_PAYMENT=1 → DISPENSE_PRODUCT HIGH, RETURN_CHANGE_VALUE=0 ✅
 
 ### Coin Payment — Multiple Products
 ![Coin Payment](sim/waveform_coin_payment.png)
@@ -36,17 +36,17 @@ A Vending Machine Controller in Verilog HDL using FSM architecture. Handles coin
 | DSPs | 0 | 120 | 0.00% |
 
 ### RTL Schematic
-![Schematic Top](synth/schematic_top.png)
-![Schematic Datapath](synth/schematic_datapath.png)
+![Schematic 1](synth/schematic_1.png)
+![Schematic 2](synth/schematic_2.png)
 
 Full utilization report: [synth/utilization_report.txt](synth/utilization_report.txt)
 
 ## Project Structure
 - src/VendingMachine.v
 
-- tb/VendingMachineTB.v
+- src/VendingMachineTB.v
 
-- sim/# Waveform screenshots
+- simulation/# Waveform screenshots
 
 - synth/# Schematic + utilization report
 
