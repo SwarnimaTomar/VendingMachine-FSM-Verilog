@@ -6,7 +6,7 @@ A Vending Machine Controller in Verilog HDL using FSM architecture. Handles coin
 
 ## Features
 - Dual payment modes: Coin insertion + Online payment bypass
-- 8 product support via 3-bit product code
+- 5 product support via 3-bit product code
 - Automatic change calculation and return
 - Cancel transaction at any state
 - Fully synthesizable RTL
