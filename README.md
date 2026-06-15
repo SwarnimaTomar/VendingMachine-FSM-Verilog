@@ -39,7 +39,7 @@ Synthesized and simulated on **Xilinx Vivado 2024.2** targeting the
 ### Test Case 1 — Online Payment Flow
 ![Online Payment Waveform](simulation/waveform_online_payment.png)
 
-- START asserted → SELECT_PRODUCT → WATER_BOTTLE_SELECTION (state 6)
+- START asserted → SELECT_PRODUCT → PEN_SELECTION_STATE (state 2)
 - ONLINE_PAYMENT=1 → jumps directly to DISPENSE_AND_RETURN (state 7)
 - PRODUCT_PRICE=10, RETURN_CHANGE=0, DISPENSE_PRODUCT=HIGH ✅
 
