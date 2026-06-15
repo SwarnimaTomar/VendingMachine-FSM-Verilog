@@ -14,7 +14,7 @@ Synthesized and simulated on **Xilinx Vivado 2024.2** targeting the
 - 5 products: Pen (₹10), Water Bottle (₹20), Lays (₹20), Coke (₹35), Notebook (₹50)
 - Dual payment: coin insertion OR online payment bypass
 - Automatic change calculation and return
-- Cancel transaction at any state — returns inserted coins
+- Cancel transaction at any state - returns inserted coins
 - Fully synthesizable RTL with asynchronous reset
 
 ---
@@ -36,11 +36,11 @@ Synthesized and simulated on **Xilinx Vivado 2024.2** targeting the
 
 ## Simulation Results
 
-### Test Case 1 — Online Payment Flow
+### Test Case 1 - Online Payment Flow
 ![Online Payment Waveform](simulation/waveform_online_payment.png)
 
-- START asserted → SELECT_PRODUCT → PEN_SELECTION_STATE (state 2)
-- ONLINE_PAYMENT=1 → jumps directly to DISPENSE_AND_RETURN (state 7)
+- START asserted -> SELECT_PRODUCT -> PEN_SELECTION_STATE (state 2)
+- ONLINE_PAYMENT=1 -> jumps directly to DISPENSE_AND_RETURN (state 7)
 - PRODUCT_PRICE=10, RETURN_CHANGE=0, DISPENSE_PRODUCT=HIGH 
 
 ### Test Case 2 — Coin Payment, Multiple Products
@@ -48,13 +48,13 @@ Synthesized and simulated on **Xilinx Vivado 2024.2** targeting the
 
 - Product Code 1 (Notebook, ₹50): COINS=60 -> DISPENSE , CHANGE=10
 - State transitions 0->1->3->7->0 verified 
-- Product Code 4 (Water Bottle, ₹20): COINS=20 → DISPENSE , CHANGE=0
-- Product Code 4 (Water Bottle, ₹20): COINS=30 → DISPENSE , CHANGE=10
+- Product Code 4 (Water Bottle, ₹20): COINS=20 -> DISPENSE , CHANGE=0
+- Product Code 4 (Water Bottle, ₹20): COINS=30 -> DISPENSE , CHANGE=10
 - State transitions 0->1->6->7->0 verified 
 
 ---
 
-## Synthesis Results — Xilinx Artix-7 (xc7a50tcsg325-1)
+## Synthesis Results - Xilinx Artix-7 (xc7a50tcsg325-1)
 
 | Resource | Used | Available | Utilization |
 |----------|------|-----------|-------------|
