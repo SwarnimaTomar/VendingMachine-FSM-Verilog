@@ -41,15 +41,16 @@ Synthesized and simulated on **Xilinx Vivado 2024.2** targeting the
 
 - START asserted → SELECT_PRODUCT → PEN_SELECTION_STATE (state 2)
 - ONLINE_PAYMENT=1 → jumps directly to DISPENSE_AND_RETURN (state 7)
-- PRODUCT_PRICE=10, RETURN_CHANGE=0, DISPENSE_PRODUCT=HIGH ✅
+- PRODUCT_PRICE=10, RETURN_CHANGE=0, DISPENSE_PRODUCT=HIGH 
 
 ### Test Case 2 — Coin Payment, Multiple Products
 ![Coin Payment Waveform](simulation/waveform_coin_payment.png)
 
-- Product Code 1 (Notebook, ₹50): COINS=60 → DISPENSE ✅, CHANGE=10
-- Product Code 4 (Water Bottle, ₹20): COINS=20 → DISPENSE ✅, CHANGE=0
-- Product Code 4 (Water Bottle, ₹20): COINS=30 → DISPENSE ✅, CHANGE=10
-- State transitions 0→1→6→7→0 verified ✅
+- Product Code 1 (Notebook, ₹50): COINS=60 -> DISPENSE , CHANGE=10
+- State transitions 0->1->3->7->0 verified 
+- Product Code 4 (Water Bottle, ₹20): COINS=20 → DISPENSE , CHANGE=0
+- Product Code 4 (Water Bottle, ₹20): COINS=30 → DISPENSE , CHANGE=10
+- State transitions 0->1->6->7->0 verified 
 
 ---
 
@@ -85,8 +86,8 @@ Full utilization report: [synth/utilization_report2.txt](synth/utilization_repor
 ## Project Structure
 - src/
 
-  VendingMachine.v         # RTL design source
-  VendingMachineTB.v       # Testbench
+  - VendingMachine.v         # RTL design source
+  - VendingMachineTB.v       # Testbench
 
 - simulation/                  # Waveform screenshots
 
@@ -97,5 +98,4 @@ Full utilization report: [synth/utilization_report2.txt](synth/utilization_repor
 ## Tools
 - Xilinx Vivado 2024.2
 - Target: xc7a50tcsg325-1 (Artix-7, Speed Grade -1)
-- HDL: Verilog (IEEE 1364-2001)
-- 
+- HDL: Verilog (IEEE 1364-2001) 
