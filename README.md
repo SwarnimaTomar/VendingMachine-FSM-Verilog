@@ -86,8 +86,9 @@ Full utilization report: [synth/utilization_report2.txt](synth/utilization_repor
 ## Project Structure
 - src/
 
-  - VendingMachine.v         # RTL design source
-  - VendingMachineTB.v       # Testbench
+   VendingMachine.v         # RTL design source
+  
+   VendingMachineTB.v       # Testbench
 
 - simulation/                  # Waveform screenshots
 
